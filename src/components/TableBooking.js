@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./stylesheets/TableBooking.css";
-import { type } from "@testing-library/user-event/dist/type";
 
 export default function TableBooking({ dispatch, availableTimes }) {
   const [date, setDate] = useState("");
