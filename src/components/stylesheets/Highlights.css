@@ -1,0 +1,26 @@
+.specials-container {
+  border-color: #333333;
+  border-width: 0 0 20px 0;
+  border-style: dotted;
+}
+
+.specials-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  background-color: #495e57;
+  padding: 5px;
+}
+
+.specials-header h4 {
+  font-size: 40pt;
+  color: #f4ce14;
+}
+
+.specials-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

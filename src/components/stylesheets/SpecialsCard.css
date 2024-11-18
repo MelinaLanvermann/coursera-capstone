@@ -1,0 +1,74 @@
+.specials-card {
+  border-radius: 16px 16px 0 0;
+  border-color: #495e57;
+  border-style: solid;
+  overflow: hidden;
+  background-color: #edefee;
+
+  max-width: 25%;
+  max-height: 30em;
+  margin: 20px;
+
+  display: grid;
+  grid-template-rows: 40% 10% 30% 20%;
+}
+
+.specials-img {
+  object-fit: contain;
+  max-width: 100%;
+  min-width: 15%;
+  max-height: 100%;
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+.specials-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 100%;
+  padding: 5px;
+
+  background-color: #495e57;
+}
+
+.specials-name {
+  font-size: 18pt;
+  font-weight: bold;
+  color: #edefee;
+}
+
+.specials-price {
+  font-size: 16pt;
+  font-weight: medium;
+  color: #f4ce14;
+}
+
+.specials-card p {
+  font-size: 16pt;
+  line-height: 1.5;
+  max-width: 65ch;
+
+  padding: 20px;
+}
+
+.specials-card button {
+  background-color: #495e57;
+  color: #edefee;
+  padding: 5%;
+  margin: 10% 0;
+  max-width: 75%;
+  justify-self: center;
+  align-self: center;
+}
+
+.specials-card button:hover {
+  transform: scale(1.2);
+}
+.specials-card button img {
+  scale: 150%;
+  padding: 0 10px;
+  filter: invert(0.96) sepia(0) saturate(47.13) hue-rotate(190deg) brightness(1)
+    contrast(0.94);
+}

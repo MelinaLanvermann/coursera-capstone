@@ -1,0 +1,29 @@
+.reservation-container {
+  display: grid;
+}
+
+.reservation-container h1 {
+  border-radius: 16px 16px 0 0;
+
+  padding: 5% 0 0 5%;
+  margin: 5% 0 0 0;
+
+  font-family: Markanzi text;
+  font-size: 64pt;
+  color: #f4ce14;
+  background-color: #495e57;
+}
+
+.reservation-form {
+  background-color: #edefee;
+  padding: 5%;
+  margin-bottom: 5%;
+
+  border-radius: 0 0 16px 16px;
+  border-color: #495e57;
+  border-width: 0 2px 2px 2px;
+  border-style: solid;
+
+  display: grid;
+  row-gap: 10px;
+}
