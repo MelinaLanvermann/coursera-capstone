@@ -25,5 +25,43 @@
   border-style: solid;
 
   display: grid;
+  grid-template-columns: 50% 50%;
   row-gap: 10px;
+}
+
+.reservation-input-group {
+  padding: 2px 5px 2px 5px;
+}
+
+.reservation-input-group label {
+  font-size: 18pt;
+  padding: 0 10px 0 0;
+}
+
+.reservation-input-group :nth-child(2) {
+  padding: 0 0 0 10px;
+  border-style: solid;
+  border-color: #495e57;
+  border-radius: 16px;
+  background-color: #edefee;
+  color: #495e57;
+
+  height: 100%;
+}
+
+.reservation-input-group:has(:nth-child(2):invalid) {
+  color: red;
+}
+
+.reservation-form button {
+  background-color: #495e57;
+  color: #edefee;
+
+  padding: 10px;
+  margin: 25px;
+}
+
+.reservation-form button:hover {
+  background-color: #edefee;
+  color: #495e57;
 }

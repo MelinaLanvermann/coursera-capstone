@@ -62,8 +62,12 @@ export default function TableBooking({ dispatch, availableTimes }) {
           </div>
 
           <div className="reservation-input-group">
-            <label>Time</label>
-            <select value={time} onChange={(e) => setTime(e.target.value)}>
+            <label htmlFor="time">Time</label>
+            <select
+              id="time"
+              value={time}
+              onChange={(e) => setTime(e.target.value)}
+            >
               {availableTimes.map((time) => (
                 <option>{time}</option>
               ))}
@@ -71,8 +75,9 @@ export default function TableBooking({ dispatch, availableTimes }) {
           </div>
 
           <div className="reservation-input-group">
-            <label>Number of Guests</label>
+            <label htmlFor="guests">Number of Guests</label>
             <input
+              id="guests"
               type="number"
               min={1}
               max={10}
@@ -82,8 +87,9 @@ export default function TableBooking({ dispatch, availableTimes }) {
           </div>
 
           <div className="reservation-input-group">
-            <label>Occasion</label>
+            <label htmlFor="occasion">Occasion</label>
             <select
+              id="occasion"
               value={occasion}
               onChange={(e) => setOccasion(e.target.value)}
             >
@@ -94,8 +100,9 @@ export default function TableBooking({ dispatch, availableTimes }) {
           </div>
 
           <div className="reservation-input-group">
-            <label>Name</label>
+            <label htmlFor="name">Name</label>
             <input
+              id="name"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -103,8 +110,9 @@ export default function TableBooking({ dispatch, availableTimes }) {
           </div>
 
           <div className="reservation-input-group">
-            <label>Email</label>
+            <label htmlFor="email">Email</label>
             <input
+              id="email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
