@@ -26,12 +26,17 @@ export default function Testimonials() {
   ];
   return (
     <>
-      <h1>Testimonials</h1>
-      <div>
-        <h4>Rating</h4>
-        <img src="" alt="ICN_STAR" />
-        <h4>REVIEW_NAME</h4>
-        <p>REVIEW_COMMENT</p>
+      <div className="testimonials-section">
+        <h1>Testimonials</h1>
+        <div className="review-grid">
+          {reviews.map((review) => (
+            <div className="review-card">
+              <h3>{review.name}</h3>
+              <h4>{review.rating}/5</h4>
+              <p>{review.reviewmsg}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );

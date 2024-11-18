@@ -51,6 +51,7 @@
   max-width: 65ch;
 
   padding: 20px;
+  overflow: scroll;
 }
 
 .specials-card button {

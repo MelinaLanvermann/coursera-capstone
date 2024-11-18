@@ -1,11 +1,13 @@
 import React from "react";
 import "./stylesheets/About.css";
 
+import logo from "../icons_assets/Asset 7@4x.png";
+
 export default function About() {
   return (
     <>
-      <div className="about-section-container">
-        <div>
+      <div className="about-section">
+        <div className="about-section-col">
           <h1>Little Lemon</h1>
           <h3>Chicago</h3>
           <p>
@@ -16,7 +18,7 @@ export default function About() {
             duis enim velit mollit.{" "}
           </p>
         </div>
-        <img src="" alt="IMG_LEMON" />
+        <img src={logo} alt="IMG_LEMON" />
       </div>
     </>
   );

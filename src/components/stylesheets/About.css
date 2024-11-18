@@ -1,4 +1,10 @@
-.about-section-container {
+.about-section {
   display: grid;
   grid-template-columns: 50% 50%;
+  column-gap: 20px;
+  margin: 20px;
+}
+
+.about-section img {
+  max-width: 50%;
 }
